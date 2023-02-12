@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+}
+
+.hexContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.hexagon {
+    width: 20rem;
+    height: 24rem;
+    /* clip-path: polygon(0% 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%); */
+    clip-path: polygon(0 0, 100% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.hexagon::before {
+    background-color: aquamarine;
+    content: "";
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    clip-path: polygon(0% 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(134deg, #f5ebeb, transparent);
+    margin: 0;
+}
+
+.circle {
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    background: linear-gradient(129deg, #dfdfdf, transparent);
+    border-radius: 100%;
+    margin-left: 50%;
+    margin-top: 8rem;
+    transform: translateX(-50%);
+}
+
+.cardPos {
+    margin-top: 22rem;
+    margin-left: 21rem;
+    transform: rotate(356deg);
+}
+
+.card {
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1.7rem;
+    box-shadow: 18px 26px 35px 3px #e7dcdc;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+h1 {
+    background-color: #412b2c;
+    padding: 0.3rem 0.01rem 0.3rem 0.58rem;
+    border-radius: 0.4rem;
+    color: white;
+    font-family: 'Lora', serif;
+    margin-block: 0;
+    font-size: 1.4rem;
+
+}
+
+.name {
+    background-color: #e5e539;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    color: #412b2c;
+}
+
+.fullStackTxt {
+    margin-block: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    color: #3e2d2d;
+}
+
+.devText {
+    font-size: 2.8rem;
+    margin-top: -1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-block-end: 0;
+    color: #3e2d2d;
+}
+
+.secContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.secTitle {
+    font-size: 3rem;
+    margin-block: 0;
+    margin-top: -2rem;
+    color: #f4b41a;
+    width: fit-content;
+    background-color: #143d59;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.2rem 2rem 0.2rem 2rem;
+    border-radius: 5rem;
+    z-index: 1;
+}
+
+.secDivider {
+    width: 100%;
+    height: 2rem;
+    background-color: blue;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+.secDividerTop {
+    height: 50%;
+    width: 100%;
+    background-color: #a881ff;
+}
+
+.section {
+    background-image: linear-gradient(134deg, #f5ebeb, transparent);
+    margin-top: -3rem;
+    padding: 2rem;
+}
+
+.subSec {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.eduTitle {
+    margin-block: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    transform: rotate(270deg) translate(-30%, 1rem);
+    height: fit-content;
+    background-color: #fcbc00;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: #ffffff;
+}
+
+.cardText {
+    font-family: 'Montserrat', sans-serif;
+    margin-block: 0.6rem;
+    font-weight: 500;
+    background-color: #303030;
+    color: white;
+    padding-right: 0.2rem;
+    border-radius: 0.3rem;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+}
+
+.year {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10rem;
+    margin-block: 0;
+    width: -webkit-fill-available;
+    text-align: center;
+    color: #f9f7f7;
+}
+
+.chip {
+    background-color: #f4b41a;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    color: black;
+}
